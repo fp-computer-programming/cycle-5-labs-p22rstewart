@@ -1,13 +1,23 @@
-# Author: Ryan (AMDG) 11/2/21
-
-import time
+# Author: RTS 10/25/21
 import math
+import time
 
-t0 = time.perf_counter
-t1 = time.perf_counter
+t0 = time.perf_counter()
 
-t0 = math.pow(2, 2)
-t1 = 2 ** 2
+math.pow(2, 2)
 
-print(time.process_time(t0))
-print(time.process_time(t1))
+t1 = time.perf_counter()
+
+speed1 = t1 - t0
+print(speed1)
+
+t2 = time.perf_counter()
+
+2 ** 2
+
+t3 = time.perf_counter()
+
+speed2 = t3 - t2
+print(speed2)
+
+print(speed2 - speed1)

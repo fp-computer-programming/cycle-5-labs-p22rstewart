@@ -1,4 +1,4 @@
-# Author: Ryan (AMDG) 11/2/21
+# Author: RTS 10/25/21
 import math
 
 print(math.ceil(7.15))
